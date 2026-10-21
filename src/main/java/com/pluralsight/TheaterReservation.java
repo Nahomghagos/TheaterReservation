@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class mts {
+public class TheaterReservation {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         System.out.println("please enter your full name?");
@@ -29,7 +29,7 @@ public class mts {
         System.out.println("how many tickets do you need?");
         String tickets = myScanner.nextLine();
         int tTickets = Integer.parseInt(tickets);
-        String ifTickets= (tTickets > 1) ? tickets : "tickets";
+        String ifTickets= (tTickets > 1) ? tickets+" tickets" : "ticket";
 
         System.out.println(ifTickets+ " reserved for " + reservDate + " "+ "under" +" "+ fullName);
 
